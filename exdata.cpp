@@ -22,6 +22,7 @@ void ExData::readyToStart(unsigned int time)
     timeLeft = time;
     qsrand(QTime(0, 0, 0).secsTo(QTime::currentTime()));
     exDelLine[0] = qrand() % 51;
+    _sleep(1000);
     qsrand(QTime(0, 0, 0).secsTo(QTime::currentTime()));
     exDelLine[1] = qrand() % 51;
     for (int i = 0; i < 3; ++i)
